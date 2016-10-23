@@ -1,0 +1,37 @@
+# rules for dolby atmos add-on for arise sound mod
+type dolby, domain;
+
+app_domain(dolby)
+
+# app sandbox
+type dolby_data_file, file_type, data_file_type;
+
+file_type_auto_trans(dolby, app_data_file, dolby_data_file)
+file_type_auto_trans(dolby, system_data_file, dolby_data_file)
+
+set_prop(dolby, default_prop)
+set_prop(dolby, system_prop)
+set_prop(dolby, audio_prop)
+set_prop(dolby, bluetooth_prop)
+
+allow dolby accessibility_service:service_manager find;
+allow dolby activity_service:service_manager find;
+allow dolby audio_service:service_manager find;
+allow dolby audioserver_service:service_manager find;
+allow dolby connectivity_service:service_manager find;
+allow dolby display_service:service_manager find;
+allow dolby graphicsstats_service:service_manager find;
+allow dolby input_method_service:service_manager find;
+allow dolby input_service:service_manager find;
+allow dolby media_session_service:service_manager find;
+allow dolby network_management_service:service_manager find;
+allow dolby power_service:service_manager find;
+allow dolby surfaceflinger_service:service_manager find;
+
+# access to app sandbox
+allow dolby dolby_data_file:dir create_dir_perms;
+allow dolby dolby_data_file:file create_file_perms;
+
+# allow access to the files by other domains
+allow domain dolby_data_file:dir r_dir_perms;
+allow domain dolby_data_file:file r_file_perms;

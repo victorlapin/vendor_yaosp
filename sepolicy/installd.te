@@ -1,0 +1,3 @@
+# dolby atmos support
+allow installd dolby_data_file:dir { create_dir_perms relabelfrom relabelto };
+allow installd dolby_data_file:notdevfile_class_set { create_file_perms relabelfrom relabelto };

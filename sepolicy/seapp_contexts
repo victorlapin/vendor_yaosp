@@ -1,0 +1,2 @@
+# dolby atmos support
+user=_app seinfo=dolby_app domain=dolby type=dolby_data_file

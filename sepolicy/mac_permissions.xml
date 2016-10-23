@@ -14,4 +14,17 @@
     <allow-all />
     <seinfo value="release" />
   </signer>
+
+  <!-- Dolby Atmos -->
+  <signer signature="@RELEASE" >
+    <package name="com.atmos">
+       <seinfo value="dolby_app" />
+    </package>
+  </signer>
+
+  <signer signature="@RELEASE" >
+    <package name="com.atmos.daxappUI">
+       <seinfo value="dolby_app" />
+    </package>
+  </signer>
 </policy>

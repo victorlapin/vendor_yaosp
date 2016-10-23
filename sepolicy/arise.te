@@ -28,3 +28,9 @@ allow arise toolbox_exec:file rx_file_perms;
 
 # allow access to the files by other domains
 allow domain arise_log_file:file r_file_perms;
+
+# execute pidof (to lookup dolby atmos process id)
+allow arise self:capability sys_ptrace;
+allow arise kernel:dir r_dir_perms;
+allow arise kernel:file r_file_perms;
+allow arise dolby:file rw_file_perms;
