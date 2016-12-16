@@ -46,3 +46,6 @@ PRODUCT_PACKAGES += \
 # Include OMS (Substratum)
 PRODUCT_PACKAGES += \
     masquerade
+
+# Pull in Prebuilt applications for phones
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
