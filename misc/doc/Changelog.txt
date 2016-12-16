@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.50 - 10/12/2016
+YAOSP-NG Changelog 0.51 - 16/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
@@ -103,6 +103,9 @@ Features
   - packageinstaller : show current and new version (may be overwritten by gapps)
   - art, bionic, external_skia optimizations
   - Batterystats: never show unnacounted and over-counted
+  - Dynamically tell the user which vendor image is needed
+  - replace (poor) launcher3 by prebuilt Nexus launcher (wallpaper picker as well)
+    (you will need a modded version of opengapps, default opengapps removes theses :( )
 
 Flasher ZIP
 -----------
