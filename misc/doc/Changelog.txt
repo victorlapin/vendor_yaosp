@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 1.00 - 07/02/2017
+YAOSP-NG Changelog 1.01 - xx/02/2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r14 N4F26O (synced on 20170207 17:59 CET)
@@ -8,6 +8,7 @@ Settings
 --------
   - More : statusbar network indicators (with option to animate arrows with network activity)
   - More - Mobile Networks - toggle to show/hide data connection in signal icon when roaming (instead of "R")
+  - Display - show/hide brightness slider in QS panel
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
@@ -21,6 +22,7 @@ Settings
   - Notifications - Settings menu icon : battery light (separate color for slow/fast charging)
   - Sound : increasing ring feature
   - Sound : toggle to reorient volume rockers according to screen rotation
+  - Sound : toggle for volume rocker wake
   - Sound - Other sounds : Charging sounds (fixed)
   - Sound - Other sounds : Charging vibration
   - Apps : add fastscroll (scrollbar) to application list
